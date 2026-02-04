@@ -174,7 +174,6 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
-        /* Services Section */
         .services {
             padding: 80px 0;
             background-color: var(--bg-secondary);
@@ -220,11 +219,11 @@
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
             margin-top: 60px;
         }
-
+        
         .portfolio-item {
             height: 300px;
             background: var(--accent);
