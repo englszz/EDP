@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDP.web - Agencia de Desarrollo Web</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    
     <link rel="icon" type="image/png" href="assets/edpp.png">
-    
 </head>
 <body>
+
     <header>
         <div class="container">
             <nav>
@@ -21,224 +19,362 @@
                 <button class="mobile-menu" onclick="toggleMenu()">☰</button>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#portafolio">Proyectos</a></li>
                     <li><a href="#proceso">Proceso</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><button class="theme-toggle" onclick="toggleTheme()"> Cambiar Tema</button></li>
+                    <li><button class="theme-toggle" onclick="toggleTheme()">Cambiar Tema</button></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="container">
-            <div class="hero-logo">
+    <div id="mainContent">
 
-                <img src="assets/edpp (1).png" alt="EDP.web Logo" id="heroLogo">
-            </div> 
-            
-            <h1>Creamos experiencias<br>digitales memorables</h1>
-            <p>Diseñamos y desarrollamos sitios web modernos que convierten visitantes en clientes</p>
-            <a href="#contacto" class="cta-button">Comencemos tu proyecto</a>
-        </div>
-    </section>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-logo">
+                    <img src="assets/edpp (1).png" alt="EDP.web Logo" id="heroLogo">
+                </div>
+                <h1>Creamos experiencias<br>digitales memorables</h1>
+                <p>Diseñamos y desarrollamos sitios web modernos que convierten visitantes en clientes</p>
+                <a href="#contacto" class="cta-button">Comencemos tu proyecto</a>
+            </div>
+        </section>
 
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Diseño Web</h3>
-                    <p>Diseños modernos y atractivos que reflejan la identidad de tu marca y cautivan a tu audiencia.</p>
+        <!-- QUIÉNES SOMOS -->
+        <section id="nosotros" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <h2 class="section-title-left">¿Quiénes somos?</h2>
+                        <p>Somos <strong>EDP.web</strong>, un equipo apasionado por el desarrollo web que nació con una idea simple: que cualquier negocio, sin importar su tamaño, merece una presencia digital de calidad.</p>
+                        <p>Nos especializamos en crear sitios web modernos, rápidos y funcionales que realmente representan la esencia de cada cliente. No hacemos páginas genéricas — cada proyecto es único y construido desde cero pensando en tus objetivos.</p>
+                        <p>Trabajamos de forma cercana y transparente, manteniéndote informado en cada paso del proceso hasta ver tu visión hecha realidad en la web.</p>
+                    </div>
+                    <div class="about-logo reveal reveal-right">
+                        <img src="assets/edpp (1).png" alt="EDP.web" id="aboutLogo">
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Desarrollo Web</h3>
-                    <p>Sitios web rápidos, seguros y optimizados con las últimas tecnologías del mercado.</p>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 class="section-title reveal">Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <h3>Diseño Web</h3>
+                        <p>Diseños modernos y atractivos que reflejan la identidad de tu marca y cautivan a tu audiencia.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <h3>Desarrollo Web</h3>
+                        <p>Sitios web rápidos, seguros y optimizados con las últimas tecnologías del mercado.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <h3>Webs Informativas</h3>
+                        <p>Páginas web informativas y landing pages enfocadas en presentar tu negocio de forma clara, profesional y efectiva.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <h3>Entrega optimizada y soporte puntual</h3>
+                        <p>Sitios web entregados optimizados y listos para usar, con soporte puntual para ajustes específicos cuando lo necesites.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <h3>Optimización básica y estructura web</h3>
+                        <p>Estructura Web optimizada para una buena experiencia de usuario, tiempos de carga rápidos y correcta indexación básica en buscadores.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <h3>Consultoría</h3>
+                        <p>Asesoramiento personalizado para definir la mejor estrategia digital para tu negocio.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Webs Informativas</h3>
-                    <p>Páginas web informativas y landing pages enfocadas en presentar tu negocio de forma clara, profesional y efectiva.</p>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIO -->
+        <section id="portafolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title reveal">Proyectos Destacados</h2>
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-item reveal" style="background-image: url('assets/KAIROS.jpg');"
+                        data-title="Página Web de Relojes"
+                        data-desc="Web moderna enfocada en presentación profesional de una marca de relojes. Diseño elegante, tipografía refinada y experiencia de usuario premium."
+                        data-tech="HTML · CSS · JavaScript"
+                        data-link="https://kairos-cyan.vercel.app/">
+                        <div class="portfolio-overlay">
+                            <h3>Página Web de Relojes</h3>
+                            <p>Haz clic para ver más</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item reveal" style="background-image: url('assets/REVIEW.jpg');"
+                        data-title="Music Reviews"
+                        data-desc="Plataforma de reseñas musicales con diseño limpio e intuitivo. Interfaz pensada para que el contenido sea el protagonista."
+                        data-tech="HTML · CSS · JavaScript"
+                        data-link="https://music-reviews-three.vercel.app/">
+                        <div class="portfolio-overlay">
+                            <h3>Music Reviews</h3>
+                            <p>Haz clic para ver más</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item reveal" style="background-image: url('assets/CARTA.jpg');"
+                        data-title="Página Dedicatoria"
+                        data-desc="Una página web especial para dedicar a tu pareja. Diseño romántico, animaciones suaves y completamente personalizable."
+                        data-tech="HTML · CSS · JavaScript"
+                        data-link="https://ed-pweb-ejemplo-1.vercel.app/">
+                        <div class="portfolio-overlay">
+                            <h3>Página Dedicatoria</h3>
+                            <p>Haz clic para ver más</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item reveal" style="background-image: url('assets/ARTECH.png');"
+                        data-title="Arquitectura"
+                        data-desc="Ejemplo de página web para una firma de arquitectura. Diseño minimalista y sofisticado que resalta el portafolio de proyectos."
+                        data-tech="HTML · CSS · JavaScript"
+                        data-link="https://ed-pweb-ejemplo-2.vercel.app/">
+                        <div class="portfolio-overlay">
+                            <h3>Arquitectura</h3>
+                            <p>Haz clic para ver más</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="service-card">
-                    <h3>Entrega optimizada y soporte puntual</h3>
-                    <p>Sitios web entregados optimizados y listos para usar, con soporte puntual para ajustes específicos cuando lo necesites.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Optimización básica y estructura web</h3>
-                    <p>Estructura Web optimizada para una buena experiencia de usuario, tiempos de carga rápidos y correcta indexación básica en buscadores.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Consultoría</h3>
-                    <p>Asesoramiento personalizado para definir la mejor estrategia digital para tu negocio.</p>
+            </div>
+        </section>
+
+        <!-- MODAL PORTAFOLIO -->
+        <div class="modal-overlay" id="portfolioModal" onclick="closeModal(event)">
+            <div class="modal-box">
+                <button class="modal-close" onclick="closeModalBtn()">✕</button>
+                <div class="modal-image" id="modalImage"></div>
+                <div class="modal-body">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDesc"></p>
+                    <span class="modal-tech" id="modalTech"></span>
+                    <a id="modalLink" href="#" target="_blank" rel="noopener noreferrer" class="modal-visit">Ver proyecto en vivo →</a>
                 </div>
             </div>
         </div>
-    </section>
 
-
-<section id="portafolio" class="portfolio">
-    <div class="container">
-        <h2 class="section-title">Proyectos Destacados</h2>
-
-        <div class="portfolio-grid">
-
-            <a 
-                href="https://kairos-cyan.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="portfolio-item"
-                style="background-image: url('assets/KAIROS.jpg');"
-            >
-                <div class="portfolio-overlay">
-                    <h3>Página Web de Relojes</h3>
-                    <p>Web moderna enfocada en presentación profesional.</p>
-                </div>
-            </a> 
-
-            <a 
-                href="https://music-reviews-three.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="portfolio-item"
-                style="background-image: url('assets/REVIEW.jpg');"
-            >
-                <div class="portfolio-overlay">
-                    <h3>Music Reviews</h3>
-                    <p>Plataforma de reseñas con diseño limpio.</p>
-                </div>
-            </a>
-
-            <a 
-                href="https://ed-pweb-ejemplo-1.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="portfolio-item"
-                style="background-image: url('assets/CARTA.jpg');"
-            >
-                <div class="portfolio-overlay">
-                    <h3>Página Dedicatoria</h3>
-                    <p>Dedica una web bonita a tu pareja.</p>
-                </div>
-            </a>
-
-             <a 
-                href="https://ed-pweb-ejemplo-2.vercel.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="portfolio-item"
-                style="background-image: url('assets/ARTECH.png');"
-            >
-                <div class="portfolio-overlay">
-                    <h3>Arquitectura</h3>
-                    <p>Ejemplo de página de arquitectura.</p>
-                </div>
-            </a>
-
-    
-
-        </div>
-    </div>
-</section>
-
-
-    <section id="proceso" class="process">
-        <div class="container">
-            <h2 class="section-title">Nuestro Proceso</h2>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Descubrimiento</h3>
-                    <p>Conocemos tu negocio, objetivos y audiencia</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Estrategia</h3>
-                    <p>Definimos la mejor solución para tus necesidades</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Diseño</h3>
-                    <p>Creamos prototipos visuales para tu aprobación</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Desarrollo</h3>
-                    <p>Construimos tu sitio con código limpio y eficiente</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <h3>Lanzamiento</h3>
-                    <p>Ponemos tu sitio en línea y monitoreamos su rendimiento</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="section-title">Hablemos de tu proyecto</h2>
-             <form 
-  class="contact-form"
-  action="https://formspree.io/f/xjgknbgv"
-  method="POST"
-  id="contactForm"
->
-    <div class="form-group">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="form-group">
-        <label for="message">Cuéntanos sobre tu proyecto</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-
-    <button type="submit" class="submit-button">Enviar mensaje</button>
-
-    <p id="formStatus" style="display:none; margin-top:15px; font-weight:500;">
-        Gracias por contactarnos. Te responderemos pronto.
-    </p>
-</form>
-
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-
-                    <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        <!-- GALERÍA — sección botón entre Proyectos y Proceso -->
+        <section class="gallery-cta">
+            <div class="container">
+                <div class="gallery-cta-inner reveal">
+                    <div class="gallery-cta-text">
+                        <h2>¿Quieres ver más?</h2>
+                        <p>Explora nuestra galería completa de proyectos y capturas de todo lo que hemos construido.</p>
+                    </div>
+                    <button class="gallery-open-btn" onclick="openGallery()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
                         </svg>
-                    </a>
+                        Ver Galería
+                    </button>
+                </div>
+            </div>
+        </section>
 
-                  <a 
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=edpwebcontacto@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="social-link"
-  title="Email"
->
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-    </svg>
-</a>
+        <!-- PROCESO -->
+        <section id="proceso" class="process">
+            <div class="container">
+                <h2 class="section-title reveal">Nuestro Proceso</h2>
+                <div class="process-steps">
+                    <div class="process-step reveal">
+                        <div class="step-number">1</div>
+                        <h3>Descubrimiento</h3>
+                        <p>Conocemos tu negocio, objetivos y audiencia</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">2</div>
+                        <h3>Estrategia</h3>
+                        <p>Definimos la mejor solución para tus necesidades</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">3</div>
+                        <h3>Diseño</h3>
+                        <p>Creamos prototipos visuales para tu aprobación</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">4</div>
+                        <h3>Desarrollo</h3>
+                        <p>Construimos tu sitio con código limpio y eficiente</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="step-number">5</div>
+                        <h3>Lanzamiento</h3>
+                        <p>Ponemos tu sitio en línea y monitoreamos su rendimiento</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title reveal">Preguntas Frecuentes</h2>
+                <div class="faq-list">
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            ¿Cuánto tiempo tarda en estar lista mi página?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El tiempo promedio de entrega es de <strong>una semana</strong>. En proyectos más complejos puede extenderse hasta una semana y media. Siempre te damos una estimación clara al inicio para que sepas exactamente cuándo tendrás tu sitio listo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            ¿Qué necesito para empezar?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>¡Nada complicado! Solo escríbenos por Instagram y cuéntanos sobre tu proyecto: qué tipo de negocio tienes, qué quieres mostrar en tu web y cualquier referencia o idea que tengas. A partir de ahí nosotros te guiamos en todo el proceso.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            ¿El hosting está incluido?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí. Todos nuestros proyectos se despliegan en <strong>Vercel</strong>, una plataforma de hosting moderna, rápida y confiable. Tu sitio quedará en línea sin que tengas que preocuparte por nada técnico.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            ¿Puedo pedir cambios después de la entrega?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos soporte puntual para ajustes específicos después de la entrega. Si necesitas cambiar textos, imágenes o pequeñas modificaciones, estamos disponibles para ayudarte.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" onclick="toggleFaq(this)">
+                            ¿Trabajan con cualquier tipo de negocio?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí. Hemos trabajado con marcas de productos, servicios profesionales, proyectos creativos y más. Si tienes un negocio o idea que quieres llevar al mundo digital, podemos ayudarte.</p>
+                        </div>
+                    </div>
 
                 </div>
-                <p class="footer-text">&copy; 2026 EDP.web - Todos los derechos reservados</p>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title reveal">Hablemos de tu proyecto</h2>
+                    <div class="contact-instagram reveal">
+                        <div class="ig-icon-wrap">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </div>
+                        <p class="ig-main-text">¿Listo para empezar? Escríbenos directamente por Instagram.</p>
+                        <p class="ig-sub-text">Respondemos rápido, cuéntanos tu idea y lo hacemos realidad.</p>
+                        <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="ig-button">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                            Escríbenos en Instagram
+                        </a>
+                        <p class="ig-handle">@edp.web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer-text">&copy; 2026 EDP.web - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- fin #mainContent -->
+
+    <!-- ══════════════════════════════
+         VISTA GALERÍA (SPA)
+    ══════════════════════════════ -->
+    <div id="galleryView" style="display:none;">
+
+        <div class="gallery-header">
+            <div class="container">
+                <div class="gallery-header-inner">
+                    <button class="gallery-back-btn" onclick="closeGallery()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                        Volver
+                    </button>
+                    <h1 class="gallery-title">Galería de Proyectos</h1>
+                    <span></span><!-- spacer -->
+                </div>
             </div>
         </div>
-    </footer>
 
+        <div class="gallery-grid-wrap">
+            <div class="container">
+                <p class="gallery-subtitle">Una mirada a todo lo que hemos construido.</p>
+                <div class="gallery-grid">
+
+                    <div class="gallery-thumb" style="background-image: url('assets/AJDENT.jpeg');" data-src="assets/AJDENT.jpeg" data-title="Página Web de Odontología"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/AJDENT2.jpeg');" data-src="assets/AJDENT2.jpeg" data-title="Página Web de Odontología"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/KAIROS2.jpeg');" data-src="assets/KAIROS2.jpeg" data-title="Página Web de Relojes"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/MUSIC.jpeg');" data-src="assets/MUSIC.jpeg" data-title="Music Reviews"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/MUSICFUTURE.jpeg');" data-src="assets/MUSICFUTURE.jpeg" data-title="Music Reviews"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/FREEJAY.jpeg');" data-src="assets/FREEJAY.jpeg" data-title="Página Web de Barbería"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/DELAER.jpeg');" data-src="assets/DELAER.jpeg" data-title="Dealer"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/PORTFOLIO.jpeg');" data-src="assets/PORTFOLIO.jpeg" data-title="Portafolio"></div>
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gallery-lightbox" id="galleryLightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-box">
+            <button class="modal-close" onclick="closeLightbox()">✕</button>
+            <img id="lightboxImg" src="" alt="">
+            <p id="lightboxTitle" class="lightbox-title"></p>
+        </div>
+    </div>
+
+    <!-- BOTÓN FLOTANTE INSTAGRAM -->
+    <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="float-ig" title="Escríbenos en Instagram">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        <span class="float-ig-label">Escríbenos</span>
+    </a>
+
+    <script src="script.js"></script>
 </body>
 </html>
