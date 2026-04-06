@@ -237,23 +237,91 @@
             <a href="https://www.instagram.com/edp.web/" target="_blank" class="rebranding-handle">@edp.web ✦</a>
             <h2 class="rebranding-title">¿Tu marca no te representa como quieres?</h2>
             <p class="rebranding-desc">En EDP.web te ayudamos a construir una identidad visual que hable por tu negocio antes de que tú digas una sola palabra.</p>
-            <p class="rebranding-desc">Logo, colores, tipografía y presencia en redes — todo diseñado con intención, coherencia y enfocado en el cliente que quieres atraer.</p>
+            <p class="rebranding-desc">No hacemos logos genéricos. Hacemos marcas que se recuerdan.</p>
             <ul class="rebranding-list">
                 <li>— Logo principal y variantes</li>
                 <li>— Paleta de colores</li>
                 <li>— Tipografía</li>
                 <li>— Aplicación en redes sociales</li>
             </ul>
-            <a href="https://www.instagram.com/edp.web/" target="_blank" class="rebranding-cta">Quiero mi rebranding</a>
+            <button class="rebranding-cta" onclick="openRebrandingModal()">Quiero mi rebranding</button>
         </div>
         <div class="rebranding-logo">
             <div class="rebranding-paper">
                 <img src="assets/paper.png" alt="" class="rebranding-paper-img">
-                <img src="assets/edpp (1).png" alt="EDP.web" class="rebranding-logo-img">
+                <img src="assets/rebranding.png" alt="EDP.web" class="rebranding-logo-img">
             </div>
         </div>
     </div>
 </section>
+
+<!-- MODAL REBRANDING -->
+<div class="rebranding-modal-overlay" id="rebrandingModal" onclick="closeRebrandingModal(event)">
+    <div class="rebranding-modal-box">
+        <button class="modal-close" onclick="closeRebrandingModalBtn()">×</button>
+        
+        <div class="rebranding-modal-header">
+            <img src="assets/rebranding.png" alt="EDP.web Rebranding" class="rebranding-modal-logo">
+            <h2>Servicio de Rebranding</h2>
+            <p class="rebranding-modal-subtitle">Dale a tu marca la identidad que merece</p>
+        </div>
+ 
+        <div class="rebranding-modal-body">
+            <div class="rebranding-modal-section">
+                <h3>¿Qué incluye?</h3>
+                <ul class="rebranding-modal-list">
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span><strong>Logo principal y variantes</strong> — Versiones para fondo claro, oscuro y aplicaciones específicas</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span><strong>Paleta de colores completa</strong> — Colores primarios, secundarios y de apoyo con códigos exactos</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span><strong>Tipografía definida</strong> — Fuentes para títulos, textos y aplicaciones digitales</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span><strong>Manual de identidad visual</strong> — Guía de uso, proporciones y aplicaciones correctas</span>
+                    </li>
+                    <li>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        <span><strong>Templates para redes sociales</strong> — Posts, stories e imagen de perfil optimizados</span>
+                    </li>
+                </ul>
+            </div>
+ 
+            <div class="rebranding-modal-section">
+                <h3>¿Por qué rebranding?</h3>
+                <p>Una identidad visual coherente es la diferencia entre parecer amateur y parecer profesional. Tu marca habla antes de que tú lo hagas — asegúrate de que está diciendo lo correcto.</p>
+                <p>Trabajamos contigo desde cero para entender tu negocio, tu audiencia y tus objetivos, y creamos una identidad que no solo se ve bien, sino que funciona estratégicamente.</p>
+            </div>
+ 
+            <div class="rebranding-modal-cta">
+                <p class="rebranding-modal-ready">¿Listo para transformar tu marca?</p>
+                <a href="https://www.instagram.com/edp.web/" target="_blank" class="rebranding-modal-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    Haz tu rebranding ahora
+                </a>
+                <p class="rebranding-modal-contact">Escríbenos en Instagram: <a href="https://www.instagram.com/edp.web/" target="_blank">@edp.web</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- FAQ -->
         <section id="faq" class="faq">

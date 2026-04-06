@@ -146,3 +146,20 @@ function initReveal() {
 
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 }
+
+// ── MODAL REBRANDING ──
+function openRebrandingModal() {
+    document.getElementById('rebrandingModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+ 
+function closeRebrandingModal(e) {
+    if (e && e.target !== document.getElementById('rebrandingModal')) return;
+    closeRebrandingModalBtn();
+}
+ 
+function closeRebrandingModalBtn() {
+    document.getElementById('rebrandingModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+ 
