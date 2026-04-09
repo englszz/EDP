@@ -9,6 +9,10 @@
 </head>
 <body>
 
+    <div id="loader">
+  <div class="loader-logo">EDP.web</div>
+</div>
+
     <header>
         <div class="container">
             <nav>
@@ -22,8 +26,8 @@
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#portafolio">Proyectos</a></li>
+                    <li><a href="#planes">Planes</a></li>
                     <li><a href="#proceso">Proceso</a></li>
-                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                     <li><button class="theme-toggle" onclick="toggleTheme()">Cambiar Tema</button></li>
                 </ul>
@@ -41,9 +45,31 @@
                 </div>
                 <h1>Creamos experiencias<br>digitales memorables</h1>
                 <p>Diseñamos y desarrollamos sitios web modernos que convierten visitantes en clientes</p>
-                <a href="#contacto" class="cta-button">Comencemos tu proyecto</a>
+                <a href="#planes" class="cta-button">Mira nuestros planes</a>
             </div>
         </section>
+
+<section class="stats">
+  <div class="stat">
+    <h2>5+</h2>
+    <p>Proyectos completados</p>
+  </div>
+
+  <div class="stat">
+    <h2>100%</h2>
+    <p>Clientes satisfechos</p>
+  </div>
+
+  <div class="stat">
+    <h2>7–14 días</h2>
+    <p>Tiempo de entrega</p>
+  </div>
+
+  <div class="stat">
+    <h2>Moderno</h2>
+    <p>Diseño + rendimiento</p>
+  </div>
+</section>
 
         <!-- QUIÉNES SOMOS -->
         <section id="nosotros" class="about">
@@ -196,6 +222,119 @@
             </div>
         </section>
 
+        <section id="planes" class="plans">
+        <div class="container">
+            <h2 class="section-title">Nuestros Planes</h2>
+            
+            <div class="plans-grid">
+                <!-- Plan Básico -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Básico</h3>
+                        <div class="plan-price">
+                            <span class="currency">RD$</span>
+                            <span class="amount">7,500</span>
+                        </div>
+                        <p class="plan-period">Pago único</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <p class="feature-highlight">¿Qué incluye?</p>
+                        <ul class="features-list">
+                            <li><strong>Página web profesional completa</strong></li>
+                            <li><strong>Diseño personalizado</strong></li>
+                            <li><strong>Responsive (móvil, tablet, PC)</strong></li>
+                            <li><strong>Hosting incluido por 1 año</strong></li>
+                            <li><strong>Dominio (.Vercel) por 1 año</strong></li>
+                        </ul>
+                        
+                        <p class="feature-highlight">Edición:</p>
+                        <p class="feature-desc">Nosotros editamos el contenido por ti</p>
+                        
+                        <div class="monthly-cost">
+                            <p><strong>Actualizaciones:</strong> RD$ 1,500/mes</p>
+                            <p class="cost-note">(opcional - precio negociable)</p>
+                        </div>
+                        
+                        <p class="ideal-for"><strong>Ideal para:</strong> Negocios que prefieren delegar las actualizaciones</p>
+                    </div>
+                    
+                    <a href="#contacto" class="plan-button">Elegir plan</a>
+                </div>
+
+                <!-- Plan Profesional -->
+                <div class="plan-card featured">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Profesional</h3>
+                        <div class="plan-price">
+                            <span class="currency">RD$</span>
+                            <span class="amount">9,000</span>
+                        </div>
+                        <p class="plan-period">Pago único</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <p class="feature-highlight">¿Qué incluye?</p>
+                        <ul class="features-list">
+                            <li><strong>Todo lo del Plan Básico +</strong></li>
+                            <li><strong>Sistema de administración</strong></li>
+                            <li><strong>Panel de control fácil de usar</strong></li>
+                            <li><strong>Edita productos y catálogo tú mismo</strong></li>
+                            <li><strong>Capacitación incluida</strong></li>
+                        </ul>
+                        
+                        <p class="feature-highlight">Edición:</p>
+                        <p class="feature-desc">¡Las haces tú mismo cuando quieras!</p>
+                        
+                        <div class="monthly-cost">
+                            <p><strong>Costo mensual:</strong> RD$ 0</p>
+                        </div>
+                        
+                        <p class="ideal-for"><strong>Ideal para:</strong> Negocios que actualizan productos frecuentemente</p>
+                    </div>
+                    
+                    <a href="#contacto" class="plan-button">Elegir plan</a>
+                </div>
+
+                <!-- Plan E-commerce -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">E-commerce</h3>
+                        <div class="plan-price">
+                            <span class="currency">RD$</span>
+                            <span class="amount">12,000</span>
+                        </div>
+                        <p class="plan-period">Pago único</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <p class="feature-highlight">¿Qué incluye?</p>
+                        <ul class="features-list">
+                            <li><strong>Todo lo del Plan Profesional +</strong></li>
+                            <li><strong>Pasarela de pago integrada</strong></li>
+                            <li><strong>Acepta tarjetas crédito/débito</strong></li>
+                            <li><strong>Procesa pagos automáticamente</strong></li>
+                            <li><strong>Gestión de pedidos</strong></li>
+                            <li><strong>Notificaciones automáticas</strong></li>
+                        </ul>
+                        
+                        <p class="feature-highlight">¿Qué es pasarela de pago?</p>
+                        <p class="feature-desc">Sistema para que tus clientes paguen con tarjeta en tu web. Como Amazon - todo automático.</p>
+                        
+                        <div class="monthly-cost">
+                            <p><strong>Costo mensual:</strong> RD$ 0</p>
+                        </div>
+                        
+                        <p class="ideal-for"><strong>Ideal para:</strong> Tiendas online que quieren vender 24/7</p>
+                    </div>
+                    
+                    <a href="#contacto" class="plan-button">Elegir plan</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
         <!-- PROCESO -->
         <section id="proceso" class="process">
             <div class="container">
@@ -323,7 +462,6 @@
     </div>
 </div>
 
-        <!-- FAQ -->
         <section id="faq" class="faq">
             <div class="container">
                 <h2 class="section-title reveal">Preguntas Frecuentes</h2>
@@ -383,7 +521,6 @@
             </div>
         </section>
 
-        <!-- CONTACTO -->
         <section id="contacto" class="contact">
             <div class="container">
                 <div class="contact-content">
@@ -478,7 +615,6 @@
         </div>
     </div>
 
-    <!-- BOTÓN FLOTANTE INSTAGRAM -->
     <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="float-ig" title="Escríbenos en Instagram">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>

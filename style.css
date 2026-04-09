@@ -34,6 +34,35 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+#loader {
+    position: fixed;
+    inset: 0;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -168,6 +197,70 @@ nav {
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Contenedor principal adaptable */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  
+  /* Cambiamos el fondo blanco fijo por transparente o una variable */
+  background-color: transparent; 
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  position: relative;
+}
+
+/* Línea divisoria adaptable */
+.stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  /* Usamos un color con opacidad para que se vea bien en cualquier fondo */
+  background-color: rgba(128, 128, 128, 0.3); 
+}
+
+/* Títulos adaptables */
+.stat h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  /* currentColor hereda el color de texto del padre (negro en light, blanco en dark) */
+  color: currentColor; 
+  margin: 0 0 8px 0;
+  letter-spacing: -1px;
+}
+
+/* Párrafos adaptables */
+.stat p {
+  font-size: 0.95rem;
+  /* Un color grisáceo que suele funcionar en ambos modos, o usa opacidad */
+  color: currentColor;
+  opacity: 0.7; 
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .stat {
+    min-width: 45%;
+    margin-bottom: 30px;
+  }
+  .stat:not(:last-child)::after {
+    display: none;
+  }
 }
 
 /* ── QUIÉNES SOMOS ── */
@@ -634,6 +727,203 @@ nav {
     font-size: 16px;
     margin-top: 16px;
     opacity: 0.75;
+}
+
+/* Plans Section */
+.plans {
+    padding: 80px 0;
+    background-color: var(--bg-primary);
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.plan-card {
+    background: var(--bg-primary);
+    padding: 40px 32px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.plan-card.featured {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    transform: none;
+    box-shadow: none;
+}
+
+.plan-card.featured:hover {
+    transform: scale(1.03) translateY(-6px);
+}
+
+.popular-badge {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.plan-header {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.plan-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.plan-price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.plan-price .currency {
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.plan-price .amount {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--text-primary);
+}
+
+.plan-period {
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.plan-features {
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+
+.feature-highlight {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.feature-desc {
+    font-size: 14px;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.features-list li {
+    padding: 8px 0;
+    border-bottom: none;
+    opacity: 0.8;
+}
+
+.features-list li {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li::before {
+    content: '✓';
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.monthly-cost {
+    background: rgba(0,0,0,0.03);
+    color: var(--text-primary);
+    padding: 14px 16px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.monthly-cost p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.cost-note {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.ideal-for {
+    font-size: 13px;
+    color: var(--text-primary);
+    margin-top: 12px;
+}
+
+.plan-button {
+    border-radius: 12px;
+}
+
+.plan-button {
+    display: block;
+    width: 100%;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: auto;
+    transition: all 0.25s ease;
+}
+
+.plan-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+    .plans-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-card.featured {
+        transform: scale(1); /* importante en mobile */
+    }
 }
 
 /* ── PROCESO ── */

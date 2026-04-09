@@ -4,6 +4,13 @@ const logos = {
     dark:  'assets/edpblackk.png',
 };
 
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+        loader.classList.add("hide");
+    }, 500); 
+});
+
 function updateLogos(theme) {
     const src = theme === 'dark' ? logos.dark : logos.light;
     ['heroLogo','headerLogo','aboutLogo'].forEach(id => {
