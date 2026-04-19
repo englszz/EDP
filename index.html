@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDP.web - Agencia de Desarrollo Web</title>
+    <meta name="description"
+        content="EDP.web - Agencia de Desarrollo Web. Creamos y diseñamos sitios web modernos, rápidos y optimizados que convierten visitantes en clientes.">
+    <!-- Open Graph para Redes Sociales -->
+    <meta property="og:title" content="EDP.web - Agencia de Desarrollo Web">
+    <meta property="og:description" content="Diseñamos sitios web modernos que convierten visitantes en clientes.">
+    <meta property="og:image" content="https://edp-web.vercel.app/assets/logo-edp.png">
+    <meta property="og:url" content="https://edp-web.vercel.app">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/edpp.png">
 </head>
+
 <body>
 
     <div id="loader">
-  <div class="loader-logo">EDP.web</div>
-</div>
+        <div class="loader-logo">EDP.web</div>
+    </div>
 
     <header>
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="assets/edpp (1).png" alt="EDP.web Logo" class="logo-image" id="headerLogo">
+                    <img src="assets/logo-edp.png" alt="EDP.web Logo" class="logo-image" id="headerLogo">
                     <span>EDP.web</span>
                 </div>
-                <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+                <button class="mobile-menu" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
@@ -29,7 +39,20 @@
                     <li><a href="#planes">Planes</a></li>
                     <li><a href="#proceso">Proceso</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><button class="theme-toggle" onclick="toggleTheme()">Cambiar Tema</button></li>
+                    <li><button class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar Tema">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button></li>
                 </ul>
             </nav>
         </div>
@@ -41,7 +64,7 @@
         <section id="inicio" class="hero">
             <div class="container">
                 <div class="hero-logo">
-                    <img src="assets/edpp (1).png" alt="EDP.web Logo" id="heroLogo">
+                    <img src="assets/logo-edp.png" alt="EDP.web Logo" id="heroLogo">
                 </div>
                 <h1>Creamos experiencias<br>digitales memorables</h1>
                 <p>Diseñamos y desarrollamos sitios web modernos que convierten visitantes en clientes</p>
@@ -49,27 +72,27 @@
             </div>
         </section>
 
-<section class="stats">
-  <div class="stat">
-    <h2>5+</h2>
-    <p>Proyectos completados</p>
-  </div>
+        <section class="stats">
+            <div class="stat">
+                <h2>5+</h2>
+                <p>Proyectos completados</p>
+            </div>
 
-  <div class="stat">
-    <h2>100%</h2>
-    <p>Clientes satisfechos</p>
-  </div>
+            <div class="stat">
+                <h2>100%</h2>
+                <p>Clientes satisfechos</p>
+            </div>
 
-  <div class="stat">
-    <h2>7–14 días</h2>
-    <p>Tiempo de entrega</p>
-  </div>
+            <div class="stat">
+                <h2>7–14 días</h2>
+                <p>Tiempo de entrega</p>
+            </div>
 
-  <div class="stat">
-    <h2>Moderno</h2>
-    <p>Diseño + rendimiento</p>
-  </div>
-</section>
+            <div class="stat">
+                <h2>Moderno</h2>
+                <p>Diseño + rendimiento</p>
+            </div>
+        </section>
 
         <!-- QUIÉNES SOMOS -->
         <section id="nosotros" class="about">
@@ -77,28 +100,31 @@
                 <div class="about-grid">
                     <div class="about-text reveal">
                         <h2 class="section-title-left">¿Quiénes somos?</h2>
-                        <p>Somos <strong>EDP.web</strong>, un equipo apasionado por el desarrollo web que nació con una idea simple: que cualquier negocio, sin importar su tamaño, merece una presencia digital de calidad.</p>
-                        <p>Nos especializamos en crear sitios web modernos, rápidos y funcionales que realmente representan la esencia de cada cliente. No hacemos páginas genéricas — cada proyecto es único y construido desde cero pensando en tus objetivos.</p>
-                        <p>Trabajamos de forma cercana y transparente, manteniéndote informado en cada paso del proceso hasta ver tu visión hecha realidad en la web.</p>
+                        <p>Somos <strong>EDP.web</strong>, un equipo apasionado por el desarrollo web que nació con una
+                            idea simple: que cualquier negocio, sin importar su tamaño, merece una presencia digital de
+                            calidad.</p>
+                        <p>Nos especializamos en crear sitios web modernos, rápidos y funcionales que realmente
+                            representan la esencia de cada cliente. No hacemos páginas genéricas — cada proyecto es
+                            único y construido desde cero pensando en tus objetivos.</p>
+                        <p>Trabajamos de forma cercana y transparente, manteniéndote informado en cada paso del proceso
+                            hasta ver tu visión hecha realidad en la web.</p>
                     </div>
                     <div class="about-logo reveal reveal-right">
-                        <img src="assets/edpp (1).png" alt="EDP.web" id="aboutLogo">
+                        <img src="assets/logo-edp.png" alt="EDP.web" id="aboutLogo" loading="lazy">
                     </div>
                 </div>
             </div>
 
-        <div class="about-identity reveal">
-    <a href="public/identidad-edp.pdf"
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="identity-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-        </svg>
-        Identidad de la empresa
-    </a>
-</div>
+            <div class="about-identity reveal">
+                <a href="public/identidad-edp.pdf" target="_blank" rel="noopener noreferrer" class="identity-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                    </svg>
+                    Identidad de la empresa
+                </a>
+            </div>
 
 
         </section>
@@ -111,7 +137,8 @@
                 <div class="services-grid">
                     <div class="service-card reveal">
                         <h3>Diseño Web</h3>
-                        <p>Diseños modernos y atractivos que reflejan la identidad de tu marca y cautivan a tu audiencia.</p>
+                        <p>Diseños modernos y atractivos que reflejan la identidad de tu marca y cautivan a tu
+                            audiencia.</p>
                     </div>
                     <div class="service-card reveal">
                         <h3>Desarrollo Web</h3>
@@ -119,15 +146,18 @@
                     </div>
                     <div class="service-card reveal">
                         <h3>Webs Informativas</h3>
-                        <p>Páginas web informativas y landing pages enfocadas en presentar tu negocio de forma clara, profesional y efectiva.</p>
+                        <p>Páginas web informativas y landing pages enfocadas en presentar tu negocio de forma clara,
+                            profesional y efectiva.</p>
                     </div>
                     <div class="service-card reveal">
                         <h3>Entrega optimizada y soporte puntual</h3>
-                        <p>Sitios web entregados optimizados y listos para usar, con soporte puntual para ajustes específicos cuando lo necesites.</p>
+                        <p>Sitios web entregados optimizados y listos para usar, con soporte puntual para ajustes
+                            específicos cuando lo necesites.</p>
                     </div>
                     <div class="service-card reveal">
                         <h3>Optimización básica y estructura web</h3>
-                        <p>Estructura Web optimizada para una buena experiencia de usuario, tiempos de carga rápidos y correcta indexación básica en buscadores.</p>
+                        <p>Estructura Web optimizada para una buena experiencia de usuario, tiempos de carga rápidos y
+                            correcta indexación básica en buscadores.</p>
                     </div>
                     <div class="service-card reveal">
                         <h3>Consultoría</h3>
@@ -146,8 +176,7 @@
                     <div class="portfolio-item reveal" style="background-image: url('assets/edprestaurant.png');"
                         data-title="EDP Restaurant"
                         data-desc="Web moderna enfocada en presentación profesional de un restaurante. Diseño elegante, tipografía refinada y experiencia de usuario premium."
-                        data-tech="HTML · CSS · JavaScript"
-                        data-link="https://edp-restaurant.vercel.app/">
+                        data-tech="HTML · CSS · JavaScript" data-link="https://edp-restaurant.vercel.app/">
                         <div class="portfolio-overlay">
                             <h3>EDP Restaurante</h3>
                             <p>Haz clic para ver más</p>
@@ -157,8 +186,7 @@
                     <div class="portfolio-item reveal" style="background-image: url('assets/ajdent.png');"
                         data-title="AJ Dent"
                         data-desc="Plataforma de aumatización e información para clínica odontólogica, con diseño limpio e intuitivo. Interfaz pensada para que el contenido sea el protagonista."
-                        data-tech="HTML · CSS · JavaScript · 3D"
-                        data-link="https://aj-dent.vercel.app/">
+                        data-tech="HTML · CSS · JavaScript · 3D" data-link="https://aj-dent.vercel.app/">
                         <div class="portfolio-overlay">
                             <h3>AJ Dent</h3>
                             <p>Haz clic para ver más</p>
@@ -168,19 +196,17 @@
                     <div class="portfolio-item reveal" style="background-image: url('assets/PORTAFOLIO.png');"
                         data-title="Portafolio"
                         data-desc="Página web especial para portafolio personal. Sección de proyectos, tus logros, contacto y habilidades, toda tu formación en una web."
-                        data-tech="HTML · CSS · JavaScript · ASTRO"
-                        data-link="https://engels-damiron.vercel.app/en/">
+                        data-tech="HTML · CSS · JavaScript · ASTRO" data-link="https://engels-damiron.vercel.app/en/">
                         <div class="portfolio-overlay">
                             <h3>Portafolio</h3>
                             <p>Haz clic para ver más</p>
                         </div>
                     </div>
 
-                    <div class="portfolio-item reveal" style="background-image: url('assets/EDP\ wear.png');"
+                    <div class="portfolio-item reveal" style="background-image: url('assets/edp-wear.png');"
                         data-title="Tienda de Ropa"
                         data-desc="Ejemplo de página web para tienda de ropa. Diseño minimalista y sofisticado para tendencias mundiales."
-                        data-tech="HTML · CSS · JavaScript · CMS"
-                        data-link="https://edp-wear.vercel.app/">
+                        data-tech="HTML · CSS · JavaScript · CMS" data-link="https://edp-wear.vercel.app/">
                         <div class="portfolio-overlay">
                             <h3>EDP Wear</h3>
                             <p>Haz clic para ver más</p>
@@ -193,13 +219,14 @@
 
         <div class="modal-overlay" id="portfolioModal" onclick="closeModal(event)">
             <div class="modal-box">
-                <button class="modal-close" onclick="closeModalBtn()">✕</button>
+                <button class="modal-close" onclick="closeModalBtn()" aria-label="Cerrar modal">✕</button>
                 <div class="modal-image" id="modalImage"></div>
                 <div class="modal-body">
                     <h3 id="modalTitle"></h3>
                     <p id="modalDesc"></p>
                     <span class="modal-tech" id="modalTech"></span>
-                    <a id="modalLink" href="#" target="_blank" rel="noopener noreferrer" class="modal-visit">Ver proyecto en vivo →</a>
+                    <a id="modalLink" href="#" target="_blank" rel="noopener noreferrer" class="modal-visit">Ver
+                        proyecto en vivo →</a>
                 </div>
             </div>
         </div>
@@ -212,9 +239,12 @@
                         <p>Explora nuestra galería completa de proyectos y capturas de todo lo que hemos construido.</p>
                     </div>
                     <button class="gallery-open-btn" onclick="openGallery()">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-                            <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
                         </svg>
                         Ver Galería
                     </button>
@@ -223,117 +253,120 @@
         </section>
 
         <section id="planes" class="plans">
-        <div class="container">
-            <h2 class="section-title">Nuestros Planes</h2>
-            
-            <div class="plans-grid">
-                <!-- Plan Básico -->
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3 class="plan-name">Básico</h3>
-                        <div class="plan-price">
-                            <span class="currency">RD$</span>
-                            <span class="amount">7,500</span>
+            <div class="container">
+                <h2 class="section-title">Nuestros Planes</h2>
+
+                <div class="plans-grid">
+                    <!-- Plan Básico -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Básico</h3>
+                            <div class="plan-price">
+                                <span class="currency">RD$</span>
+                                <span class="amount">7,500</span>
+                            </div>
+                            <p class="plan-period">Pago único</p>
                         </div>
-                        <p class="plan-period">Pago único</p>
-                    </div>
-                    
-                    <div class="plan-features">
-                        <p class="feature-highlight">¿Qué incluye?</p>
-                        <ul class="features-list">
-                            <li><strong>Página web profesional completa</strong></li>
-                            <li><strong>Diseño personalizado</strong></li>
-                            <li><strong>Responsive (móvil, tablet, PC)</strong></li>
-                            <li><strong>Hosting incluido por 1 año</strong></li>
-                            <li><strong>Dominio (.Vercel) por 1 año</strong></li>
-                        </ul>
-                        
-                        <p class="feature-highlight">Edición:</p>
-                        <p class="feature-desc">Nosotros editamos el contenido por ti</p>
-                        
-                        <div class="monthly-cost">
-                            <p><strong>Actualizaciones:</strong> RD$ 1,500/mes</p>
-                            <p class="cost-note">(opcional - precio negociable)</p>
+
+                        <div class="plan-features">
+                            <p class="feature-highlight">¿Qué incluye?</p>
+                            <ul class="features-list">
+                                <li><strong>Página web profesional completa</strong></li>
+                                <li><strong>Diseño personalizado</strong></li>
+                                <li><strong>Responsive (móvil, tablet, PC)</strong></li>
+                                <li><strong>Hosting incluido por 1 año</strong></li>
+                                <li><strong>Dominio (.Vercel) por 1 año</strong></li>
+                            </ul>
+
+                            <p class="feature-highlight">Edición:</p>
+                            <p class="feature-desc">Nosotros editamos el contenido por ti</p>
+
+                            <div class="monthly-cost">
+                                <p><strong>Actualizaciones:</strong> RD$ 1,500/mes</p>
+                                <p class="cost-note">(opcional - precio negociable)</p>
+                            </div>
+
+                            <p class="ideal-for"><strong>Ideal para:</strong> Negocios que prefieren delegar las
+                                actualizaciones</p>
                         </div>
-                        
-                        <p class="ideal-for"><strong>Ideal para:</strong> Negocios que prefieren delegar las actualizaciones</p>
+
+                        <a href="#contacto" class="plan-button">Elegir plan</a>
                     </div>
-                    
-                    <a href="#contacto" class="plan-button">Elegir plan</a>
+
+                    <!-- Plan Profesional -->
+                    <div class="plan-card featured">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Profesional</h3>
+                            <div class="plan-price">
+                                <span class="currency">RD$</span>
+                                <span class="amount">9,000</span>
+                            </div>
+                            <p class="plan-period">Pago único</p>
+                        </div>
+
+                        <div class="plan-features">
+                            <p class="feature-highlight">¿Qué incluye?</p>
+                            <ul class="features-list">
+                                <li><strong>Todo lo del Plan Básico +</strong></li>
+                                <li><strong>Sistema de administración</strong></li>
+                                <li><strong>Panel de control fácil de usar</strong></li>
+                                <li><strong>Edita productos y catálogo tú mismo</strong></li>
+                                <li><strong>Capacitación incluida</strong></li>
+                            </ul>
+
+                            <p class="feature-highlight">Edición:</p>
+                            <p class="feature-desc">¡Las haces tú mismo cuando quieras!</p>
+
+                            <div class="monthly-cost">
+                                <p><strong>Costo mensual:</strong> RD$ 0</p>
+                            </div>
+
+                            <p class="ideal-for"><strong>Ideal para:</strong> Negocios que actualizan productos
+                                frecuentemente</p>
+                        </div>
+
+                        <a href="#contacto" class="plan-button">Elegir plan</a>
+                    </div>
+
+                    <!-- Plan E-commerce -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-name">E-commerce</h3>
+                            <div class="plan-price">
+                                <span class="currency">RD$</span>
+                                <span class="amount">12,000</span>
+                            </div>
+                            <p class="plan-period">Pago único</p>
+                        </div>
+
+                        <div class="plan-features">
+                            <p class="feature-highlight">¿Qué incluye?</p>
+                            <ul class="features-list">
+                                <li><strong>Todo lo del Plan Profesional +</strong></li>
+                                <li><strong>Pasarela de pago integrada</strong></li>
+                                <li><strong>Acepta tarjetas crédito/débito</strong></li>
+                                <li><strong>Procesa pagos automáticamente</strong></li>
+                                <li><strong>Gestión de pedidos</strong></li>
+                                <li><strong>Notificaciones automáticas</strong></li>
+                            </ul>
+
+                            <p class="feature-highlight">¿Qué es pasarela de pago?</p>
+                            <p class="feature-desc">Sistema para que tus clientes paguen con tarjeta en tu web. Como
+                                Amazon - todo automático.</p>
+
+                            <div class="monthly-cost">
+                                <p><strong>Costo mensual:</strong> RD$ 0</p>
+                            </div>
+
+                            <p class="ideal-for"><strong>Ideal para:</strong> Tiendas online que quieren vender 24/7</p>
+                        </div>
+
+                        <a href="#contacto" class="plan-button">Elegir plan</a>
+                    </div>
                 </div>
 
-                <!-- Plan Profesional -->
-                <div class="plan-card featured">
-                    <div class="plan-header">
-                        <h3 class="plan-name">Profesional</h3>
-                        <div class="plan-price">
-                            <span class="currency">RD$</span>
-                            <span class="amount">9,000</span>
-                        </div>
-                        <p class="plan-period">Pago único</p>
-                    </div>
-                    
-                    <div class="plan-features">
-                        <p class="feature-highlight">¿Qué incluye?</p>
-                        <ul class="features-list">
-                            <li><strong>Todo lo del Plan Básico +</strong></li>
-                            <li><strong>Sistema de administración</strong></li>
-                            <li><strong>Panel de control fácil de usar</strong></li>
-                            <li><strong>Edita productos y catálogo tú mismo</strong></li>
-                            <li><strong>Capacitación incluida</strong></li>
-                        </ul>
-                        
-                        <p class="feature-highlight">Edición:</p>
-                        <p class="feature-desc">¡Las haces tú mismo cuando quieras!</p>
-                        
-                        <div class="monthly-cost">
-                            <p><strong>Costo mensual:</strong> RD$ 0</p>
-                        </div>
-                        
-                        <p class="ideal-for"><strong>Ideal para:</strong> Negocios que actualizan productos frecuentemente</p>
-                    </div>
-                    
-                    <a href="#contacto" class="plan-button">Elegir plan</a>
-                </div>
-
-                <!-- Plan E-commerce -->
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3 class="plan-name">E-commerce</h3>
-                        <div class="plan-price">
-                            <span class="currency">RD$</span>
-                            <span class="amount">12,000</span>
-                        </div>
-                        <p class="plan-period">Pago único</p>
-                    </div>
-                    
-                    <div class="plan-features">
-                        <p class="feature-highlight">¿Qué incluye?</p>
-                        <ul class="features-list">
-                            <li><strong>Todo lo del Plan Profesional +</strong></li>
-                            <li><strong>Pasarela de pago integrada</strong></li>
-                            <li><strong>Acepta tarjetas crédito/débito</strong></li>
-                            <li><strong>Procesa pagos automáticamente</strong></li>
-                            <li><strong>Gestión de pedidos</strong></li>
-                            <li><strong>Notificaciones automáticas</strong></li>
-                        </ul>
-                        
-                        <p class="feature-highlight">¿Qué es pasarela de pago?</p>
-                        <p class="feature-desc">Sistema para que tus clientes paguen con tarjeta en tu web. Como Amazon - todo automático.</p>
-                        
-                        <div class="monthly-cost">
-                            <p><strong>Costo mensual:</strong> RD$ 0</p>
-                        </div>
-                        
-                        <p class="ideal-for"><strong>Ideal para:</strong> Tiendas online que quieren vender 24/7</p>
-                    </div>
-                    
-                    <a href="#contacto" class="plan-button">Elegir plan</a>
-                </div>
             </div>
-
-        </div>
-    </section>
+        </section>
 
         <!-- PROCESO -->
         <section id="proceso" class="process">
@@ -370,97 +403,114 @@
         </section>
 
 
-<section class="rebranding-section">
-    <div class="rebranding-inner">
-        <div class="rebranding-text">
-            <a href="https://www.instagram.com/edp.web/" target="_blank" class="rebranding-handle">@edp.web ✦</a>
-            <h2 class="rebranding-title">¿Tu marca no te representa como quieres?</h2>
-            <p class="rebranding-desc">En EDP.web te ayudamos a construir una identidad visual que hable por tu negocio antes de que tú digas una sola palabra.</p>
-            <p class="rebranding-desc">No hacemos logos genéricos. Hacemos marcas que se recuerdan.</p>
-            <ul class="rebranding-list">
-                <li>— Logo principal y variantes</li>
-                <li>— Paleta de colores</li>
-                <li>— Tipografía</li>
-                <li>— Aplicación en redes sociales</li>
-            </ul>
-            <button class="rebranding-cta" onclick="openRebrandingModal()">Quiero mi rebranding</button>
-        </div>
-        <div class="rebranding-logo">
-            <div class="rebranding-paper">
-                <img src="assets/paper.png" alt="" class="rebranding-paper-img">
-                <img src="assets/rebranding.png" alt="EDP.web" class="rebranding-logo-img">
+        <section class="rebranding-section">
+            <div class="rebranding-inner">
+                <div class="rebranding-text">
+                    <a href="https://www.instagram.com/edp.web/" target="_blank" class="rebranding-handle">@edp.web
+                        ✦</a>
+                    <h2 class="rebranding-title">¿Tu marca no te representa como quieres?</h2>
+                    <p class="rebranding-desc">En EDP.web te ayudamos a construir una identidad visual que hable por tu
+                        negocio antes de que tú digas una sola palabra.</p>
+                    <p class="rebranding-desc">No hacemos logos genéricos. Hacemos marcas que se recuerdan.</p>
+                    <ul class="rebranding-list">
+                        <li>— Logo principal y variantes</li>
+                        <li>— Paleta de colores</li>
+                        <li>— Tipografía</li>
+                        <li>— Aplicación en redes sociales</li>
+                    </ul>
+                    <button class="rebranding-cta" onclick="openRebrandingModal()">Quiero mi rebranding</button>
+                </div>
+                <div class="rebranding-logo">
+                    <div class="rebranding-paper">
+                        <img src="assets/paper.png" alt="" class="rebranding-paper-img" loading="lazy">
+                        <img src="assets/rebranding.png" alt="EDP.web" class="rebranding-logo-img" loading="lazy">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- MODAL REBRANDING -->
-<div class="rebranding-modal-overlay" id="rebrandingModal" onclick="closeRebrandingModal(event)">
-    <div class="rebranding-modal-box">
-        <button class="modal-close" onclick="closeRebrandingModalBtn()">×</button>
-        
-        <div class="rebranding-modal-header">
-            <img src="assets/rebranding.png" alt="EDP.web Rebranding" class="rebranding-modal-logo">
-            <h2>Servicio de Rebranding</h2>
-            <p class="rebranding-modal-subtitle">Dale a tu marca la identidad que merece</p>
+        <!-- MODAL REBRANDING -->
+        <div class="rebranding-modal-overlay" id="rebrandingModal" onclick="closeRebrandingModal(event)">
+            <div class="rebranding-modal-box">
+                <button class="modal-close" onclick="closeRebrandingModalBtn()" aria-label="Cerrar modal">×</button>
+
+                <div class="rebranding-modal-header">
+                    <img src="assets/rebranding.png" alt="EDP.web Rebranding" class="rebranding-modal-logo"
+                        loading="lazy">
+                    <h2>Servicio de Rebranding</h2>
+                    <p class="rebranding-modal-subtitle">Dale a tu marca la identidad que merece</p>
+                </div>
+
+                <div class="rebranding-modal-body">
+                    <div class="rebranding-modal-section">
+                        <h3>¿Qué incluye?</h3>
+                        <ul class="rebranding-modal-list">
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span><strong>Logo principal y variantes</strong> — Versiones para fondo claro, oscuro y
+                                    aplicaciones específicas</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span><strong>Paleta de colores completa</strong> — Colores primarios, secundarios y de
+                                    apoyo con códigos exactos</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span><strong>Tipografía definida</strong> — Fuentes para títulos, textos y aplicaciones
+                                    digitales</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span><strong>Manual de identidad visual</strong> — Guía de uso, proporciones y
+                                    aplicaciones correctas</span>
+                            </li>
+                            <li>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span><strong>Templates para redes sociales</strong> — Posts, stories e imagen de perfil
+                                    optimizados</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="rebranding-modal-section">
+                        <h3>¿Por qué rebranding?</h3>
+                        <p>Una identidad visual coherente es la diferencia entre parecer amateur y parecer profesional.
+                            Tu marca habla antes de que tú lo hagas — asegúrate de que está diciendo lo correcto.</p>
+                        <p>Trabajamos contigo desde cero para entender tu negocio, tu audiencia y tus objetivos, y
+                            creamos una identidad que no solo se ve bien, sino que funciona estratégicamente.</p>
+                    </div>
+
+                    <div class="rebranding-modal-cta">
+                        <p class="rebranding-modal-ready">¿Listo para transformar tu marca?</p>
+                        <a href="https://www.instagram.com/edp.web/" target="_blank" class="rebranding-modal-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            Haz tu rebranding ahora
+                        </a>
+                        <p class="rebranding-modal-contact">Escríbenos en Instagram: <a
+                                href="https://www.instagram.com/edp.web/" target="_blank">@edp.web</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
- 
-        <div class="rebranding-modal-body">
-            <div class="rebranding-modal-section">
-                <h3>¿Qué incluye?</h3>
-                <ul class="rebranding-modal-list">
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span><strong>Logo principal y variantes</strong> — Versiones para fondo claro, oscuro y aplicaciones específicas</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span><strong>Paleta de colores completa</strong> — Colores primarios, secundarios y de apoyo con códigos exactos</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span><strong>Tipografía definida</strong> — Fuentes para títulos, textos y aplicaciones digitales</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span><strong>Manual de identidad visual</strong> — Guía de uso, proporciones y aplicaciones correctas</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span><strong>Templates para redes sociales</strong> — Posts, stories e imagen de perfil optimizados</span>
-                    </li>
-                </ul>
-            </div>
- 
-            <div class="rebranding-modal-section">
-                <h3>¿Por qué rebranding?</h3>
-                <p>Una identidad visual coherente es la diferencia entre parecer amateur y parecer profesional. Tu marca habla antes de que tú lo hagas — asegúrate de que está diciendo lo correcto.</p>
-                <p>Trabajamos contigo desde cero para entender tu negocio, tu audiencia y tus objetivos, y creamos una identidad que no solo se ve bien, sino que funciona estratégicamente.</p>
-            </div>
- 
-            <div class="rebranding-modal-cta">
-                <p class="rebranding-modal-ready">¿Listo para transformar tu marca?</p>
-                <a href="https://www.instagram.com/edp.web/" target="_blank" class="rebranding-modal-btn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    Haz tu rebranding ahora
-                </a>
-                <p class="rebranding-modal-contact">Escríbenos en Instagram: <a href="https://www.instagram.com/edp.web/" target="_blank">@edp.web</a></p>
-            </div>
-        </div>
-    </div>
-</div>
 
         <section id="faq" class="faq">
             <div class="container">
@@ -473,7 +523,9 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>El tiempo promedio de entrega es de <strong>una semana</strong>. En proyectos más complejos puede extenderse hasta una semana y media. Siempre te damos una estimación clara al inicio para que sepas exactamente cuándo tendrás tu sitio listo.</p>
+                            <p>El tiempo promedio de entrega es de <strong>una semana</strong>. En proyectos más
+                                complejos puede extenderse hasta una semana y media. Siempre te damos una estimación
+                                clara al inicio para que sepas exactamente cuándo tendrás tu sitio listo.</p>
                         </div>
                     </div>
 
@@ -483,7 +535,9 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>¡Nada complicado! Solo escríbenos por Instagram y cuéntanos sobre tu proyecto: qué tipo de negocio tienes, qué quieres mostrar en tu web y cualquier referencia o idea que tengas. A partir de ahí nosotros te guiamos en todo el proceso.</p>
+                            <p>¡Nada complicado! Solo escríbenos por Instagram y cuéntanos sobre tu proyecto: qué tipo
+                                de negocio tienes, qué quieres mostrar en tu web y cualquier referencia o idea que
+                                tengas. A partir de ahí nosotros te guiamos en todo el proceso.</p>
                         </div>
                     </div>
 
@@ -493,7 +547,9 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Sí. Todos nuestros proyectos se despliegan en <strong>Vercel</strong>, una plataforma de hosting moderna, rápida y confiable. Tu sitio quedará en línea sin que tengas que preocuparte por nada técnico.</p>
+                            <p>Sí. Todos nuestros proyectos se despliegan en <strong>Vercel</strong>, una plataforma de
+                                hosting moderna, rápida y confiable. Tu sitio quedará en línea sin que tengas que
+                                preocuparte por nada técnico.</p>
                         </div>
                     </div>
 
@@ -503,7 +559,9 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Sí, ofrecemos soporte puntual para ajustes específicos después de la entrega. Si necesitas cambiar textos, imágenes o pequeñas modificaciones, estamos disponibles para ayudarte.</p>
+                            <p>Sí, ofrecemos soporte puntual para ajustes específicos después de la entrega. Si
+                                necesitas cambiar textos, imágenes o pequeñas modificaciones, estamos disponibles para
+                                ayudarte.</p>
                         </div>
                     </div>
 
@@ -513,7 +571,9 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Sí. Hemos trabajado con marcas de productos, servicios profesionales, proyectos creativos y más. Si tienes un negocio o idea que quieres llevar al mundo digital, podemos ayudarte.</p>
+                            <p>Sí. Hemos trabajado con marcas de productos, servicios profesionales, proyectos creativos
+                                y más. Si tienes un negocio o idea que quieres llevar al mundo digital, podemos
+                                ayudarte.</p>
                         </div>
                     </div>
 
@@ -528,14 +588,17 @@
                     <div class="contact-instagram reveal">
                         <div class="ig-icon-wrap">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </div>
                         <p class="ig-main-text">¿Listo para empezar? Escríbenos directamente por Instagram.</p>
                         <p class="ig-sub-text">Respondemos rápido, cuéntanos tu idea y lo hacemos realidad.</p>
-                        <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="ig-button">
+                        <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer"
+                            class="ig-button">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                             Escríbenos en Instagram
                         </a>
@@ -550,9 +613,11 @@
             <div class="container">
                 <div class="footer-content">
                     <div class="social-links">
-                        <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                        <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" title="Instagram">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                             </svg>
                         </a>
                     </div>
@@ -572,8 +637,9 @@
             <div class="container">
                 <div class="gallery-header-inner">
                     <button class="gallery-back-btn" onclick="closeGallery()">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"/>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="15 18 9 12 15 6" />
                         </svg>
                         Volver
                     </button>
@@ -588,18 +654,30 @@
                 <p class="gallery-subtitle">Una mirada a todo lo que hemos construido.</p>
                 <div class="gallery-grid">
 
-                    <div class="gallery-thumb" style="background-image: url('assets/AJDENT.jpeg');" data-src="assets/AJDENT.jpeg" data-title="Página Web de Odontología"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/AJDENT2.jpeg');" data-src="assets/AJDENT2.jpeg" data-title="Página Web de Odontología"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/KAIROS2.jpeg');" data-src="assets/KAIROS2.jpeg" data-title="Página Web de Relojes"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/MUSIC.jpeg');" data-src="assets/MUSIC.jpeg" data-title="Music Reviews"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/MUSICFUTURE.jpeg');" data-src="assets/MUSICFUTURE.jpeg" data-title="Music Reviews"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/FREEJAY.jpeg');" data-src="assets/FREEJAY.jpeg" data-title="Página Web de Barbería"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/DELAER.jpeg');" data-src="assets/DELAER.jpeg" data-title="Dealer"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/PORTFOLIO.jpeg');" data-src="assets/PORTFOLIO.jpeg" data-title="Portafolio"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/WEAR1.png');" data-src="assets/WEAR1.png" data-title="EDP Wear"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/WEARR2.png');" data-src="assets/WEARR2.png" data-title="EDP Wear"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/restaurant.png');" data-src="assets/restaurant.png" data-title="EDP Restaurant"></div>
-                    <div class="gallery-thumb" style="background-image: url('assets/restaurant2.png');" data-src="assets/restaurant2.png" data-title="EDP restaurant"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/AJDENT.jpeg');"
+                        data-src="assets/AJDENT.jpeg" data-title="Página Web de Odontología"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/AJDENT2.jpeg');"
+                        data-src="assets/AJDENT2.jpeg" data-title="Página Web de Odontología"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/KAIROS2.jpeg');"
+                        data-src="assets/KAIROS2.jpeg" data-title="Página Web de Relojes"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/MUSIC.jpeg');"
+                        data-src="assets/MUSIC.jpeg" data-title="Music Reviews"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/MUSICFUTURE.jpeg');"
+                        data-src="assets/MUSICFUTURE.jpeg" data-title="Music Reviews"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/FREEJAY.jpeg');"
+                        data-src="assets/FREEJAY.jpeg" data-title="Página Web de Barbería"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/DELAER.jpeg');"
+                        data-src="assets/DELAER.jpeg" data-title="Dealer"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/PORTFOLIO.jpeg');"
+                        data-src="assets/PORTFOLIO.jpeg" data-title="Portafolio"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/WEAR1.png');"
+                        data-src="assets/WEAR1.png" data-title="EDP Wear"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/WEARR2.png');"
+                        data-src="assets/WEARR2.png" data-title="EDP Wear"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/restaurant.png');"
+                        data-src="assets/restaurant.png" data-title="EDP Restaurant"></div>
+                    <div class="gallery-thumb" style="background-image: url('assets/restaurant2.png');"
+                        data-src="assets/restaurant2.png" data-title="EDP restaurant"></div>
 
                 </div>
             </div>
@@ -609,19 +687,22 @@
 
     <div class="gallery-lightbox" id="galleryLightbox" onclick="closeLightbox(event)">
         <div class="lightbox-box">
-            <button class="modal-close" onclick="closeLightbox()">✕</button>
+            <button class="modal-close" onclick="closeLightbox()" aria-label="Cerrar modal">✕</button>
             <img id="lightboxImg" src="" alt="">
             <p id="lightboxTitle" class="lightbox-title"></p>
         </div>
     </div>
 
-    <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="float-ig" title="Escríbenos en Instagram">
+    <a href="https://www.instagram.com/edp.web/" target="_blank" rel="noopener noreferrer" class="float-ig"
+        title="Escríbenos en Instagram">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
         </svg>
         <span class="float-ig-label">Escríbenos</span>
     </a>
 
     <script src="script.js"></script>
 </body>
+
 </html>

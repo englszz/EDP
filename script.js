@@ -1,6 +1,6 @@
 // ── LOGOS ──
 const logos = {
-    light: 'assets/edpp (1).png',
+    light: 'assets/logo-edp.png',
     dark:  'assets/edpblackk.png',
 };
 
