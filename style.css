@@ -737,10 +737,11 @@ nav {
 
 .plans-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(280px, 420px));
     gap: 24px;
     margin-top: 60px;
     margin-bottom: 80px;
+    justify-content: center;
 }
 
 .plan-card {
@@ -910,9 +911,9 @@ nav {
     opacity: 0.9;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .plans-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
